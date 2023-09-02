@@ -18,6 +18,20 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
+    <style>
+        .custom-button {
+            background-color: #42a8c0;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 10px;
+            border: 2px solid #42a8c0;
+        }
+        
+        .custom-button:hover {
+            background-color: #2d7788;
+            border: 2px solid #2d7788;
+        }
+    </style>     
 </head> 
 
 <body>
@@ -199,6 +213,27 @@
                 </div>  
             </section><!--//skills-section-->
             
+            <section class="section contact-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-envelope"></i></span>Contáctame</h2>
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="enviar.php">
+                        <div class="form-group">
+                            <label style="margin-top: 10px; font-weight: bold;" for="name">Nombre:</label>
+                            <input style="margin-top: 10px;" type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label style="margin-top: 10px; font-weight: bold;" for="email">Correo Electrónico:</label>
+                            <input style="margin-top: 10px;" type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label style=" margin-top: 10px; font-weight: bold;" for="message">Mensaje:</label>
+                            <textarea style="margin-top: 10px;" id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary custom-button" style="font-family: 'Roboto', sans-serif; margin-top: 10px; margin-left: 260px;">Enviar</button>
+                    </form>
+                </div><!--//contact-form-->
+            </section><!--//contact-section-->
+
 
         </div><!--//main-body-->
     </div>
