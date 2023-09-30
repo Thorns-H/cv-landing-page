@@ -33,30 +33,34 @@
         }
 
         .carousel {
+            margin-top: 50px;
             width: 100%;
             overflow: hidden;
             position: relative;
         }
 
-            .slides {
+        .slides {
             list-style: none;
             display: flex;
-            overflow: hidden;
+            padding: 0;
             transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Para mantener la relación de aspecto */
         }
 
             .slides li {
             flex: 0 0 100%;
-            width: 100%; 
-            height: auto; 
-            margin-right: 10px;
+            width: 100%;
+            height: 300px; /* Establece la altura deseada */
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
         }
 
-            .slides img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     </style>
 </head> 
 
@@ -64,11 +68,7 @@
     <div class="wrapper mt-lg-5">
         <div class="sidebar-wrapper">
             <div class="profile-container">
-<<<<<<< HEAD
-                <img class="profile" src="" alt=""/>
-=======
                 <img class="profile" src="assets/images/profile.png" alt="" />
->>>>>>> e8163f18326428d7a4bfc082c636a2b8ff6cc623
                 <h1 class="name">Abraham M.</h1>
                 <h3 class="tagline">Freelancer</h3>
             </div><!--//profile-container-->
@@ -214,15 +214,15 @@
 						</div>                                 
                     </div><!--//item-->
                     <div class="carousel">
+                        <h2 style="margin-top: 5px;"class="section-title"><span class="icon-holder"><i class="fa-solid fa-camera"></i></span>Gallery</h2>
                         <ul class="slides">
-                            <li><img src="https://wallpapers.com/images/high/pixel-cafe-rain-animated-wallpaper-t577hb3w0kyuo009.webp" alt=""></li>
-                            <li><img src="https://wallpapers.com/images/high/mr-hong-long-days-short-years-music-in-2019-ygfg7cmthpbbta0z.webp" alt=""></li>
-                            <li><img src="https://wallpapers.com/images/high/lofi-background-iy96bb9rhanrqp7v.webp" alt=""></li>
+                            <li><img src="images/first.webp" alt=""></li>
+                            <li><img src="images/second.webp" alt=""></li>
+                            <li><img src="images/third.webp" alt=""></li>
                         </ul>
                     </div>    
-                            <button class="btn btn-primary custom-button prev-button" style="font-family: 'Roboto', sans-serif; margin-top: 10px; margin-left: 205px;">Anterior</button>
-                            <button class="btn btn-primary custom-button next-button" >Siguiente</button>                       
-                    </div>  
+                                         
+                </div>  
             </section><!--//skills-section-->
             
             <section class="section contact-section">
@@ -264,7 +264,7 @@
 <button class="next-button">Siguiente</button>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    window.onload = function() {
         const slides = document.querySelector('.slides');
         const slideWidth = slides.clientWidth;
         let currentIndex = 0;
@@ -289,7 +289,7 @@
             currentIndex = (currentIndex + 1) % slides.children.length;
             goToSlide(currentIndex);
         });
-    });
+    };
 </script>
 </body>
 </html>
