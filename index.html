@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV - Landing Page</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <button id="language-switch" onclick="switchLanguage()">English</button>
+
+    <div class="cv-container">
+        <header>
+            <img src="images/profile_picture.jpeg" alt="Foto de Perfil" class="profile-picture">
+            <h1 class="es">Abraham Magaña Hernández</h1>
+            <h1 class="en">Abraham Magaña Hernández</h1>
+            <p class="es">Desarrollador de Software</p>
+            <p class="en">Software Developer</p>
+        </header>
+
+        <section id="perfil">
+            <h2 class="es">Sobre Mí</h2>
+            <h2 class="en">About Me</h2>
+            <p class="es">Soy Abraham, un programador metodico, enfocado a la resolución de problemas mediante el uso de datos, eficiente con lenguajes que tengan programación orientada a objetos, asi como algoritmos y estructuras de datos. <br><br> Me encanta la metodología open-source, por lo cual, también me agrada la colaboración para la creación de software, además intento mantenerme al día con las tecnologias, por lo cual siempre estoy intentando aprender tecnologías nuevas.
+            </p>
+            <p class="en">I am Abraham, a methodical programmer focused on problem-solving through the use of data, efficient with languages that support object-oriented programming, as well as algorithms and data structures. <br><br> I love the open-source methodology, which is why I enjoy collaborating on software development. Additionally, I strive to stay up-to-date with technologies, always seeking to learn new ones.</p>
+        </section>
+
+        <section id="idiomas">
+            <h2 class="es">Idiomas</h2>
+            <h2 class="en">Languages</h2>
+            <div class="languages-container">
+                <div class="language">
+                    <img src="images/mexico-flag.png" alt="Español" class="language-flag">
+                    <div class="language-info">
+                        <h3 class="es">Español</h3>
+                        <h3 class="en">Spanish</h3>
+                        <div class="level">
+                            <p class="es">Nativo</p>
+                            <p class="en">Native</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="language">
+                    <img src="images/usa-flag.png" alt="Inglés" class="language-flag">
+                    <div class="language-info">
+                        <h3 class="es">Inglés</h3>
+                        <h3 class="en">English</h3>
+                        <div class="level">
+                            <p class="es">Intermedio</p>
+                            <p class="en">Intermediate</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2 class="es">Experiencia</h2>
+            <h2 class="en">Experience</h2>
+            <div class="job">
+                <h3 class="es">Freelancer 2021 - hoy</h3>
+                <h3 class="en">Freelancer 2021 - today</h3>
+                <p class="es">He contribuido la mayor parte del tiempo a crear y mantener sistemas independientes para clientes, desde e-commerce hasta scripting, además de trabajar con datos para crear soluciones.</p>
+                <p class="en">I have been developing software such as e-commerce's and scripting for clients, I also exceed in using data to create solutions for them.</p>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="es">Proyectos</h2>
+            <h2 class="en">Projects</h2>
+            <div class="project">
+                <h3>REI Web Assistant</h3>
+                <p class="es">Un sistema hecho con Flask, que permite controlar todo un negocio de reparación de celulares, con control de ordenes, cotización automatica, almacenamiento de imagenes, consulta de equipos y manejo externo de API's.</p>
+                <p class="en">A system built with Flask, which allows control of a mobile repair business, including order management, automatic quotes, image storage, device information lookup, and external API handling.</p><br>
+                <p class="es">Tecnologías: Python (Flask), MariaDB, HTML, CSS y JavaScript.</p>
+                <p class="en">Technologies: Python (Flask), MariaDB, HTML, CSS and JavaScript.</p>
+                <a href="https://github.com/Thorns-H/rei" target="_blank">GitHub Repo</a>
+            </div>
+        </section>        
+
+        <section id="formacion">
+            <h2 class="es">Formación Académica</h2>
+            <h2 class="en">Education</h2>
+            <div class="education">
+                <h3 class="es">Ingeniería en Computación</h3>
+                <h3 class="en">Computer Science Engineering</h3>
+                <p>Universidad de Guadalajara, 2020 - today</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <br><br><br>
+            <h2 class="es">Contacto</h2>
+            <h2 class="en">Contact</h2>
+            <p>Email: abrahamm9986@gmail.com</p>
+            <p class="es">GitHub: <a href="https://github.com/Thorns-H">https://github.com/Thorns-H</a></p>
+            <p class="en">GitHub: <a href="https://github.com/Thorns-H">https://github.com/Thorns-H</a></p>
+            <p class="es">LinkedIn: <a href="https://www.linkedin.com/in/thorns-h/">https://www.linkedin.com/in/thorns-h/</a></p>
+            <p class="en">LinkedIn: <a href="https://www.linkedin.com/in/thorns-h/">https://www.linkedin.com/in/thorns-h/</a></p>
+        </section>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
